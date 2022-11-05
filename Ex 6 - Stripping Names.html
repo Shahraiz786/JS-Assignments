@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Striping Names</title>
+</head>
+<body>
+
+<pre><h4 id="demonstration1"></h4></pre>
+<pre><h4 id="demonstration2"></h4></pre>
+
+    <script>
+
+    const person = '\n \t John Smith \t \n';
+    const person_without_whitespace = person.trim();
+
+    document.getElementById("demonstration1").innerHTML = person;
+    document.getElementById("demonstration2").innerHTML = person_without_whitespace;
+    </script>
+
+    
+
+
+</body>
+</html>

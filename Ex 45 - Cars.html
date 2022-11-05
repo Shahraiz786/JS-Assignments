@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<body>
+    <script>
+
+        const car = {};
+
+        function produceCars(object, manufacturer, modelname, ...properties){
+            car.Manufacturer = manufacturer;
+            car.Model = modelname;
+
+            let x = 0;
+            for(let prop of properties){ 
+                object[properties[x]] = properties[x+1];
+                x = x + 2;
+            }
+        }
+
+        produceCars(car, "BMW", "2", "Color", "Gray", "Tyres", '4');
+        delete car.undefined; 
+        console.log(car);
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unchanged Magicians</title>
+</head>
+<body>
+    <script>
+
+        const magicians = ["David Copperfield","David Blaine","Ricky Jay"];
+
+        function show_magicians(...magicians) {
+        for (let x=0; x<magicians.length; x++) {
+        console.log(magicians[x]);
+        }
+        }
+
+        const make_great = (magicians) => magicians.map((name) => "The Great " + name);
+
+        const newNames = make_great(magicians);
+
+        show_magicians(magicians);
+        show_magicians(newNames);
+
+    </script>
+</body>
+</html>

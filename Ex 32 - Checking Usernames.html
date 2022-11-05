@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Usernames</title>
+</head>
+<body>
+    <script>
+            current_users = ["James", "John", "Faraz", "Tom", "Ahmed"];
+            new_users = ["james", "faraz", "Waqar"];
+
+            const uppercasecurrentuser = current_users.map(x => {
+            return x.toUpperCase();
+            });
+
+            const uppercasenewuser = new_users.map(y => {
+            return y.toUpperCase();
+            });
+
+            for (let x = 0; x < uppercasenewuser.length; x++) {
+        
+            if(uppercasenewuser.includes(uppercasecurrentuser[x])){
+              console.log(uppercasecurrentuser[x] + " is not available you will need to enter a new username.")
+            }
+
+        }
+
+    </script>
+</body>
+</html>
+

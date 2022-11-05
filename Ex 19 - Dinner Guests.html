@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Guests</title>
+</head>
+<body>
+    
+ 
+<script>
+    const deceased = ["Quaid-e-Azam", "Allama Iqbal", "Abdul Sattar Edhi"];
+        console.log("Assalam o Alaikum " + deceased[0] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[1] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[2] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum Everyone, I think " + deceased[1] + " would not be able to attend dinner");
+        deceased[1] = "Fatima Jinnah";
+        console.log("Assalam o Alaikum " + deceased[0] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[1] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[2] + " I would like to invite you to dinner");
+        console.log("Hello Everyone We have just found a bigger dinning table so we will like to invite more people");
+        var newpeople = deceased.unshift("Imran Khan"); 
+        deceased.push("Shoaib Akhtar");
+        deceased.splice(2, 0, "shahid afridi");
+        console.log("Assalam o Alaikum " + deceased[0] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[1] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[2] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[3] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[4] + " I would like to invite you to dinner");
+        console.log("Assalam o Alaikum " + deceased[5] + " I would like to invite you to dinner");
+
+        console.log("I am inviting a total of " + deceased.length + " people");
+</script>
+
+</body>       
+</html>
